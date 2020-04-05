@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (e)=>{
     console.log(searchInput.value)
     renderForcast.innerHTML = 'loading...'
 
-        fetch(`http://localhost:3000/weather?adress=${searchInput.value}`).then((response) => {
+        fetch(`/weather?adress=${searchInput.value}`).then((response) => {
             response.json().then((data) => {
                if(data.err){
                      renderForcast.textContent = data.err

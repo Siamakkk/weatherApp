@@ -6,6 +6,7 @@ const forcast = require('./utiles/forcast')
 
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //creating path for express conf
 const staticHtmlPath = path.join(__dirname,'/../public')
@@ -82,7 +83,7 @@ app.get('*', (req, res) => {
 })
 
 //set where our app going to run
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('the server is running on port 3000')
 })
 
