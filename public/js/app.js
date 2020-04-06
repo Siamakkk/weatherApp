@@ -37,7 +37,7 @@ weatherForm.addEventListener('submit', (e)=>{
 })
 
 const iconRender = function(icon){
-    if(icon === 'clear-day'){
+    if(icon === 'clear-day' ||'clear'){
         hourlyImg.src = "./img/sun.png"
     }else if(icon === 'rain'){
         hourlyImg.src = "./img/rain.png"
