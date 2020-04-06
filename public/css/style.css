@@ -52,3 +52,19 @@ button {
     border-radius: 8px;
     border: 4px solid #eeeeee;
 }
+
+#hourly-img {
+    width: 32px;
+    padding-top: 0px;
+}
+
+#location p {
+    padding: 8px;
+    margin: 0px;
+    
+}
+
+#location span {
+    padding: 8px;
+    
+}

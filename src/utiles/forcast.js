@@ -9,7 +9,7 @@ const forcast = function(latitude, longitude, callback){
         }else if(res.body.error){
            callback("we couldn't find the location you are looking for !", undefined)
         }else {
-           callback(undefined, res.body.currently.summary)
+           callback(undefined, res.body)
         }
     })
 }

@@ -55,7 +55,7 @@ app.get('/weather', (req, res) => {
                         res.send({ error })
                     }else{
                         const cityName = location.split(',')
-                        console.log(cityName)
+                        console.log(forcastData)
                         // res.send(`the wather in ${cityName[0]} is ${forcastData} right now.`)
                         res.send({
                             cityName,
