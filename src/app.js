@@ -20,6 +20,7 @@ app.use(express.static(staticHtmlPath))
 app.set('views', viewsFolderPath)
 app.set('view engine', 'hbs')
 hbs.registerPartials(partialpath)
+
 //setup routes
 app.get('', (req, res) => {
     res.render('index', {

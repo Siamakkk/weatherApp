@@ -1,8 +1,5 @@
 const request = require('request')
 
-
-
-
 const geoCode = function(location, callback){
     const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/`+ location + `.json?access_token=pk.eyJ1Ijoic2lhbWFra2siLCJhIjoiY2s4NzhqNWt2MDFqdjNrbTY3bHp5N2RlbSJ9.sOCt6YjszKgucLU1N_dO9w`
     request({url:url, json: true},(err, res) => {
@@ -23,14 +20,5 @@ const geoCode = function(location, callback){
         }
     })
 }
-
-// geoCode("shiraz",(err, data)=>{
-//     if(err){
-//         console.log(`error : ${err}`)
-//     }else{
-//         console.log(data)
-//     }
-// })
-
 
 module.exports = geoCode

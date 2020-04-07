@@ -1,14 +1,14 @@
 console.log('fornt-end javascript working')
 
+//importing dependencies
 const searchInput = document.querySelector('input')
 const renderForcastsummary = document.querySelector('#forcastMsg')
 const weatherForm = document.querySelector('#location')
 const weatherCity = document.querySelector('#city')
 const renderForcastHourly = document.querySelector('#hourly')
 const hourlyImg = document.querySelector('#hourly-img')
-// document.querySelector('div').appendChild(renderForcast)
-// document.querySelector('div').appendChild(weatherCity)
 
+//rendering forcast resualt
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()
     console.log(searchInput.value)
@@ -36,8 +36,9 @@ weatherForm.addEventListener('submit', (e)=>{
     
 })
 
+//a function for seting forcast icon src
 const iconRender = function(icon){
-    if(icon === 'clear-day' ||'clear'){
+    if(icon === ('clear-day'||'clear')){
         hourlyImg.src = "./img/sun.png"
     }else if(icon === 'rain'){
         hourlyImg.src = "./img/rain.png"
